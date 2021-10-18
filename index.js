@@ -49,6 +49,23 @@ const typeNum = (arr) => {
     return typeof item === "number";
   });
   return res;
-
-  //---7
 };
+
+//---7
+const containsAnd = (arr) => {
+  let aetr = arr.filter((item) => {
+    return item.includes("and");
+  });
+  return aetr;
+};
+
+//--8
+const oddValues = (arr) => {
+  const akoo= arr.filter((item) => {
+    if (item % 2 != 0) {
+      return item;
+    }
+  });
+  return akoo;
+};
+
